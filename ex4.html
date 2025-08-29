@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"content="width=device-,initial-scale">
+<style>
+*{
+ box-sizing:border-box;
+ }
+ /* create two columns equal that floats next to each other*/
+ column{
+ float:left;
+ width:50%;
+ padding:10px;
+ height:500px; /*should remove only for demonstration*/
+ }
+ /*clear floats after the columns*/
+ row:after{
+ content:"";
+ display:table;
+ clear:both;
+ }
+ </style>
+ </head>
+ <body>
+ <h2>Two equal columns</h2>
+ <div class="row">
+ <div class="columns"style="background-colorl:grey;">
+ <h2>Beast selling book in amazon's kindle store</h2>
+ <p>1.The Spark.</p>
+ <p>2.Choose Me.</p>
+ <p>3.The Last Thing He Told Me.</p>
+ <p>2.If You Tell: A True Story Of Murder.</p>
+ <p>5.A Familiar Sight</p>
+ </div>
+ <div class="column"style="background-color:green;">
+ <h2>Favourite Celebrities</h2>
+ <img src="1.jpg"width="200"height="200"</img>
+ <img src="2.jpg"width="200"height="200"</img>
+ <img src="3.jpg"width="200"height="200"</img>
+ <img src="4.jpg"width="200"height="200"</img>
+ <img src="5.jpg"width="200"height="200"</img>
+ <img src="6.jpg"width="200"height="200"</img>
+ </div>
+ </div>
+ </body>
+ </html>

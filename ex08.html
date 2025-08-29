@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Check Array Value</title>
+</head>
+<body>
+    <h2>Check if Array Contains a Value</h2>
+   
+    <input type="text" id="valueInput" placeholder="Enter value to check">
+    <button onclick="checkValue()">Check Value</button>
+   
+    <p id="result"></p>
+
+    <script>
+        function checkValue() {
+            const myArray = [1,2,3,4,5,6,7,8,9,10, 20, 30, 40, 50];
+            const valueToCheck = document.getElementById('valueInput').value;
+
+    if (myArray.includes(parseInt(valueToCheck))) {
+document.getElementById('result').textContent =`${valueToCheck} is in the array.`;
+            }
+else {
+document.getElementById('result').textContent = `${valueToCheck} is not in the array.`;
+            }
+        }
+    </script>
+</body>
+</html>
+

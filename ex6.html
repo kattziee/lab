@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Javascript Arithmetic Operators</title>
+</head>
+<body>
+<h1>Performing Arithmetic Operators</h1>
+<p id='add'>Addition</P>
+<p id='sub'>Subtraction</P>
+<p id='mul'>Multiplication</P>
+<p id='div'>Divison</p>
+<p id='mod'>Modulas</P>
+
+<script>
+var a=12,b=3;
+var add,sub,mul,div,mod;
+
+add=a+b;
+sub=a-b;
+mul=a*b;
+div=a/b;
+mod=a%b;
+
+document.getElementById("add").innerHTML ="Addition of"+ a + 'and' + b + "is="+add;
+document.getElementById("sub").innerHTML ="Subtraction of" +a+ 'and' +b+ "is="+sub;
+document.getElementById("mul").innerHTML ="Multiplication of" +a+ 'and' +b+ "is="+mul;
+document.getElementById("div").innerHTML ="Division of" +a+ 'and' +b+ "is="+div;
+document.getElementById("mod").innerHTML ="Modulas of" +a+ 'and' +b+" is="+mod;
+</script>
+</body>
+</html>

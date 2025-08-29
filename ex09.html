@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS Directives</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/
+    angular.min.js">
+    </script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+    <h1>AngularJS Directives</h1>
+   
+    <!-- Using custom directive -->
+    <my-greeting></my-greeting>
+   
+    <!-- Using built-in directive -->
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" ng-model="name">
+        <p>Hello,{{name}}!</p>
+    </div>
+</body>
+</html>
