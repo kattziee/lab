@@ -23,3 +23,14 @@
     </div>
 </body>
 </html>
+
+app.js
+var app = angular.module('myApp',[]);
+app.directive('myGreeting',function(){
+return {restrict:'E',
+template:'<h2>Welcome to the AngularJS Directives!</h2>'
+};
+});
+app.controller('MainCtrl',['$scope',function($scope){
+$scope.name='Computer Science Students';
+}]);
